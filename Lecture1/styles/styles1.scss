@@ -1,0 +1,113 @@
+//CONSTANTS
+:root {
+    --yellow: #FAD04C; //main
+    --white: #ffffff;
+    --beige: #FFF9E1;
+    --brown: #D18637;
+    --red: #A91718;
+    --gray: #1E1E1E;
+  }
+//GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--beige);
+    font-family: "Abril Fatface";
+    color: var(--red);
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--brown);
+    transition: all 0.7s ease;
+    
+    &:hover {
+        color: var(--red);
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+
+}
+
+h1 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+    font-family: 'Work Sans';
+}
+
+header {
+
+      nav {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 0 2rem;
+        align-items: center;
+        position: fixed;
+        bottom: 5rem;
+        text-align: center;
+        background-color: var(--yellow);
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+
+            li {
+                margin: 0 2rem;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}
+ #about, #work, #contact {
+    
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+ }
+
+/* FOOTER SECTION */
+footer {
+    height: 10vh;
+    position: relative;
+
+    .social {
+
+        float: right;
+        padding: 3rem 2rem;
+        position: fixed;
+        bottom: 2rem;
+        i {
+            width: 4rem;
+            height: 4rem;
+            color: var(--gray);
+        }
+    }
+}
