@@ -8,7 +8,7 @@
     --lila: #B289AE;
     --orange: #EC602A;
     --blue: #3D50FC;
-    --black: #000;
+    --black: #2d3436;
     --gray: #1E1E1E;
   }
   
@@ -187,7 +187,6 @@ header {
             right: 40%;
             top: 40%;
             filter: none;
-
         }
     }
 
@@ -208,6 +207,7 @@ header {
             width: 100%;
             height: auto;
             //border-top: 1px solid var(--red);
+
             img {
                 height: 3rem;
                 width: 3rem;
@@ -219,17 +219,17 @@ header {
             }
 
             li {
-                font-size: 3rem;
+                font-size: 2.3rem;
                 color: var(--black);
                 margin: 2rem 4rem;
                 font-family: 'Josefin Sans', sans-serif;
+                font-style: italic;
 
                 &::after {
                     content: "";
                     background-image: url("images/intersect.png");
                 }
             }
-
       
         }
     }
@@ -619,5 +619,452 @@ footer {
             max-width: 350px;
             height: auto;
         }
+    }
+}
+
+// MEDIA QUERIES
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    body{
+        border: none;
+        margin: 0 1rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hero {
+
+        #tagline {
+            h1 {
+                font-size: 8rem;
+                margin: 10rem 2rem 4rem;
+            }
+
+            h3 {
+                font-size: 4rem;
+                float: none;
+                left: 0;
+                margin: 8rem 2rem 4rem;
+            }
+
+            img {
+                top: 10%;
+                right: 0;
+                left: 0%;
+            }
+        }
+
+        hr {
+            margin-bottom: 10rem;
+        }
+
+        #specialties {
+            ul {
+                overflow-wrap: hidden;
+
+                li {
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    margin: 0;
+                }
+
+                .break {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    //ABOUT
+    #about {
+
+        .left, .right {
+            min-width: 100%;
+            min-height: 60vh;
+        }
+
+        .left {
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            img {
+                height: 40vh;
+                left: 18%;
+            }
+
+            &::after {
+                clear: both;
+                content: "";
+            }
+        }
+
+        .right {
+            
+            p {
+                margin: 0;
+                padding: 1rem;
+                font-size: 1.6rem;
+            }
+
+            .languages {
+             
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .about-skills {
+            max-width: 90%;
+
+
+            .row {
+
+                ul {
+
+                    li {
+
+                        margin: 0;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //WORK
+    #work {
+
+        h1 {
+            font-size: 3rem;
+            margin: 0.5rem auto;
+            text-align: center;
+        }
+
+        .work-cards {
+
+            .work-card {
+                flex-direction: column;
+
+                img {
+                    margin: 0;
+                    padding: 1.5rem 0;
+                }
+
+                .img-container {
+
+                    img {
+                        margin: 0;
+                    }
+                }
+
+                h4 {
+                    font-size: 4rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    //PROJECT
+    #container {
+        position: relative;
+        #project-showcase {
+            height: auto;
+            max-width: 90%;
+            h1 {
+                font-size: 5rem;
+                margin: 1rem;
+            }
+    
+            .content {
+                display: block;
+                .left-content {
+                    display: block;
+                    margin-top: 7rem;
+
+                    .title {
+                        margin-top: -8rem;
+                        margin-left: -10rem;
+                    
+                        h4 {
+                            font-size: 2.5rem;
+                            left: -14rem
+                        }
+
+                        ul {
+                            margin-left: -10rem;
+                        }
+                    }
+    
+                    .description {
+                        display: block;
+
+                        img {
+                            margin: 0;
+                        }
+                    }
+
+                    &::after {
+                        clear: both;
+                        content: "";
+                    }
+                }
+                
+                .right-content {
+                    display: inline-block;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        top: 30%;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    body{
+        border: none;
+        margin: 0 1rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hero {
+
+        #tagline {
+            h1 {
+                font-size: 8rem;
+                margin: 10rem 2rem 4rem;
+            }
+
+            h3 {
+                font-size: 4rem;
+                float: none;
+                left: 0;
+                margin: 8rem 2rem 4rem;
+            }
+
+            img {
+                top: 10%;
+                right: 0;
+                left: 0%;
+            }
+        }
+
+        hr {
+            margin-bottom: 10rem;
+        }
+
+        #specialties {
+            ul {
+                overflow-wrap: hidden;
+
+                li {
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    margin: 0;
+                }
+
+                .break {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    //ABOUT
+    #about {
+
+        .left, .right {
+            min-width: 100%;
+            min-height: 60vh;
+        }
+
+        .left {
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            img {
+                height: 40vh;
+                left: 18%;
+            }
+
+            &::after {
+                clear: both;
+                content: "";
+            }
+        }
+
+        .right {
+            
+            p {
+                margin: 0;
+                padding: 1rem;
+                font-size: 1.6rem;
+            }
+
+            .languages {
+             
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .about-skills {
+            max-width: 90%;
+
+
+            .row {
+
+                ul {
+
+                    li {
+
+                        margin: 0;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //WORK
+    #work {
+
+        h1 {
+            font-size: 3rem;
+            margin: 0.5rem auto;
+            text-align: center;
+        }
+
+        .work-cards {
+
+            .work-card {
+                flex-direction: column;
+
+                img {
+                    margin: 0;
+                    padding: 1.5rem 0;
+                }
+
+                .img-container {
+
+                    img {
+                        margin: 0;
+                    }
+                }
+
+                h4 {
+                    font-size: 4rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    //PROJECT
+    #container {
+        position: relative;
+        #project-showcase {
+            height: auto;
+            max-width: 90%;
+            h1 {
+                font-size: 5rem;
+                margin: 1rem;
+            }
+    
+            .content {
+                display: block;
+                .left-content {
+                    display: block;
+                    margin-top: 7rem;
+
+                    .title {
+                        margin-top: -8rem;
+                        margin-left: -10rem;
+                    
+                        h4 {
+                            font-size: 2.5rem;
+                            left: -14rem
+                        }
+
+                        ul {
+                            margin-left: -10rem;
+                        }
+                    }
+    
+                    .description {
+                        display: block;
+
+                        img {
+                            margin: 0;
+                        }
+                    }
+
+                    &::after {
+                        clear: both;
+                        content: "";
+                    }
+                }
+                
+                .right-content {
+                    display: inline-block;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        top: 30%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #hero {
+
+        #tagline {
+            margin-top: 10%;
+        }
+     
+        #specialties {
+
+            bottom: 11rem;
+        }
+    }
+
+    #contact {
+        .left {
+
+            h1 {
+                transform: translateY(60%);
+            }
+        }
+
+        .right {
+            form {
+                margin: 12rem auto;
+            }
+        }
+    
     }
 }
